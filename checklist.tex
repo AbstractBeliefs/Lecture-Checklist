@@ -1,0 +1,32 @@
+\documentclass[a4paper]{article}
+
+\usepackage{fancyhdr}
+\usepackage{latexsym}
+
+\pagestyle{fancy}
+\lhead{Pre-Lecture Checklist}
+\rhead{Edinburgh Napier University}
+
+\newenvironment{checklist}{%
+    \begin{list}{}{}% whatever you want the list to be
+    \let\olditem\item
+    \renewcommand\item{\olditem[$\Box$] }
+}{%
+    \end{list}
+}
+
+\begin{document}
+    \section{Computing}
+        \begin{checklist}
+            \item Laptop/PC on and logged in
+            \item Sufficient laptop battery/plugged in
+            \item Projector and sound correct
+            \item Correct software installed
+            \item Smallest text visible from back of class
+        \end{checklist}
+    \section{Resources}
+        \begin{checklist}
+            \item Register printed and stapled
+            \item Handouts printed and in enough quantity
+        \end{checklist}
+\end{document}
